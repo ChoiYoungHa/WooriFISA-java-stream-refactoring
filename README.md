@@ -9,8 +9,8 @@
 
 ### 학습목적👀
 
-- Lambda Stream API로 자바 코드를 리팩토링 한다.
-- Optional을 사용하여 null과 예외를 처리한다.
+- Lambda Stream API를 사용하여 자바 코드를 리팩토링 한다.
+- Optional을 사용하여 null 예외를 처리한다.
 
 ### 원본코드👏
 - 도네이션 프로젝트 검색기능
