@@ -14,7 +14,7 @@
 
 ### 원본코드👏
 - 도네이션 프로젝트 검색기능
-```
+```java
 public TalentDonationProject getDonationProject(String projectName) {
 	for (TalentDonationProject project : donationProjectList) {
 		if (project != null && project.getTalentDonationProjectName().equals(projectName)) {
@@ -28,7 +28,7 @@ public TalentDonationProject getDonationProject(String projectName) {
 ---
 
 ### 리팩토링👏
-```
+```java
 public TalentDonationProject getDonationProject(String projectName) {
 	Optional<TalentDonationProject> findproject = donationProjectList.stream()
 		.filter(project -> project != null && project.getTalentDonationProjectName()
@@ -41,7 +41,7 @@ public TalentDonationProject getDonationProject(String projectName) {
 
 ### 원본코드👍
 - 새로운 프로젝트 추가 기능
-```
+```java
 public void donationProjectInsert(TalentDonationProject project) throws Exception {
 		TalentDonationProject p = getDonationProject(project.getTalentDonationProjectName());
 		if (p != null) {
@@ -54,11 +54,11 @@ public void donationProjectInsert(TalentDonationProject project) throws Exceptio
 ---
 
 ### 리팩토링👍
-```
+```java
 public void donationProjectInsert(TalentDonationProject project) throws Exception {
 	if (donationProjectList.stream()
 		.anyMatch(p -> p.getTalentDonationProjectName().equals(project.getTalentDonationProjectName()))) {
-		throw new Exception("해당 project명은 이미 존재합니다.");
+			throw new Exception("해당 project명은 이미 존재합니다.");
 	    }
 	donationProjectList.add(project);
 }
@@ -66,7 +66,7 @@ public void donationProjectInsert(TalentDonationProject project) throws Exceptio
 ---
 ### 원본코드🎉
 - 기부자 수정 기능
-```
+```java
 public void donationProjectUpdate(String projectName, Donator people) throws Exception {
 
 		for (TalentDonationProject project : donationProjectList) {
@@ -86,7 +86,7 @@ public void donationProjectUpdate(String projectName, Donator people) throws Exc
 ---
 
 ### 리팩토링🎉
-```
+```java
 public void donationProjectUpdate(String projectName, Donator people) throws Exception {	
 		TalentDonationProject project = donationProjectList.stream()
 				.filter(p -> p != null && p.getTalentDonationProjectName()
@@ -104,7 +104,7 @@ public void donationProjectUpdate(String projectName, Donator people) throws Exc
 ---
 ### 원본코드💖
 - 수혜자 수정 기능
-```
+```java
 public void beneficiaryProjectUpdate(String projectName, Beneficiary people) {
 		for (TalentDonationProject project : donationProjectList) {
 			if (project != null && project.getTalentDonationProjectName().equals(projectName)) {
@@ -117,7 +117,7 @@ public void beneficiaryProjectUpdate(String projectName, Beneficiary people) {
 ---
 
 ### 리팩토링💖
-```
+```java
 public void beneficiaryProjectUpdate(String projectName, Beneficiary people) {
 	donationProjectList.stream()
 	.filter(project -> project != null && project.getTalentDonationProjectName().equals(projectName))
