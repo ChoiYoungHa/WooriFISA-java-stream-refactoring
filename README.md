@@ -4,7 +4,7 @@
 
 ### 개발팀원👏
 
-- 최영하, 김상민, 박웅빈, 구동길
+- [최영하](https://github.com/ChoiYoungHa) [김상민](https://github.com/isshomin) [박웅빈](https://github.com/Ungbbi) [구동길](https://github.com/dkac0012)
 ---
 
 ### 학습목적👀
