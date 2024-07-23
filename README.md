@@ -1,7 +1,5 @@
 # [우리FISA 3주차 미션] Java 프로젝트 리팩토링✌
-
 ---
-
 ### 개발팀원👏
 
 |<img src="https://avatars.githubusercontent.com/u/64997345?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/79312705?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/100770130?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/127733525?v=4" width="150" height="150"/>|
@@ -125,7 +123,7 @@ public void beneficiaryProjectUpdate(String projectName, Beneficiary people) {
 	.findFirst().ifPresent(project1 -> project1.setProjectBeneficiary(people));
 }
 ```
-
+---
 ### 고찰 🧐
 - stream api를 더 잘 활용할 수 있다면 코드의 간결성과 가독성을 향상시킬 수 있을 것 같다.
 - 같은 stream api를 사용하더라도 사용자마다 다른 방식으로 refactoring 되는 것을 통해 다양한 코드를 비교할 수 있으며 생각치 못한 방식도 배우게 되었다.
