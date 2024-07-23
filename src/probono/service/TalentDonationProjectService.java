@@ -130,17 +130,9 @@ public class TalentDonationProjectService {
 	 * @param people      수혜자
 	 */
 	public void beneficiaryProjectUpdate(String projectName, Beneficiary people) {
-
-		for (TalentDonationProject project : donationProjectList) {
-
-			if (project != null && project.getTalentDonationProjectName().equals(projectName)) {
-
-				project.setProjectBeneficiary(people);
-
-				break;
-			}
-		}
-
+		donationProjectList.stream()
+		.filter(project -> project != null && project.getTalentDonationProjectName().equals(projectName))
+		.findFirst().ifPresent(project1 -> project1.setProjectBeneficiary(people));
 	}
 
 	// TO DO

@@ -4,7 +4,9 @@
 
 ### 개발팀원👏
 
-- [최영하](https://github.com/ChoiYoungHa) [김상민](https://github.com/isshomin) [박웅빈](https://github.com/Ungbbi) [구동길](https://github.com/dkac0012)
+|<img src="https://avatars.githubusercontent.com/u/64997345?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/79312705?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/100770130?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/127733525?v=4" width="150" height="150"/>|
+|:-:|:-:|:-:|:-:|
+|[@ChoiYoungHa](https://github.com/ChoiYoungHa)|[@isshomin](https://github.com/isshomin)|[@Ungbbi](https://github.com/Ungbbi)|[@dkac0012](https://github.com/dkac0012)|
 ---
 
 ### 학습목적👀
